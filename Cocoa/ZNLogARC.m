@@ -4,7 +4,11 @@
 //  Created by Li Richard on 09-6-23.
 //
 
+<<<<<<< HEAD
 #import "ZNLog.h"
+=======
+#import "ZNLogARC.h"
+>>>>>>> b35e44774213d6200baacc78e4c21b291823afe0
 
 
 @implementation ZNLogARC

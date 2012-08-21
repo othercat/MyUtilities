@@ -23,11 +23,28 @@ kern_return_t IORegistryEntryFindFromParentEntry(io_registry_entry_t		entry,
 												 io_name_t				matchClassName ,
 												 io_registry_entry_t		*foundEntry);
 
-char *LogString(char *str,int len);
+char *LogString(char *str);
+
+char *_LogString(char *string,int strlen)
+{
+	static char     buf[2048];
+    //char            *ptr = buf;
+    int             i;
+	
+    //*ptr = '\0';
+	
+    for(i=0;i<strlen;i++)
+	{
+		if(isgraph(*(string+i)))	buf[i]=*(string+i);//if it is printable, print it
+		else												buf[i]='.';
+	}
+	buf[i]='\0';
+	return buf;
+}
 
 // Replace non-printable characters in str with '\'-escaped equivalents.
 // This function is used for convenient logging of data traffic.
-char *LogString(char *str,int len)
+char *LogString(char *str)
 {
     //static char     buf[2048];
 	static char  buf [20000*2];

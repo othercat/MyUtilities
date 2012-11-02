@@ -15,3 +15,4 @@ NSString *initDeviceNotification = @"initDeviceNotification";
 NSString *deviceRemovedNotification = @"deviceRemovedNotification";
 NSString *tfCustomerSNChangeNotification = @"tfCustomerSNChangeNotification";
 NSString *threadDidFinishedNotification = @"threadDidFinishedNotification";
+NSString *deviceTypeChangedNotification = @"deviceTypeChangedNotification";

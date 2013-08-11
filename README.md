@@ -4,7 +4,10 @@ MyUtilities
 	My personal utilities
 
 ## ChangeLog
-    
+2013-08-11
+
+* add `tree` command which supports CJK than the version from Homebrew
+
 2012-06-21
 
 * Split the files into OSX Shell commands and Cocoa Classes
